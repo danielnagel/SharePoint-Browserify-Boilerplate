@@ -1,0 +1,21 @@
+{
+    "files": [
+        "src/main.ts"
+    ],
+    "exclude": [
+      "node_modules"
+    ],
+    "compilerOptions": {
+      "emitDecoratorMetadata": true,
+      "experimentalDecorators": true,
+      "module": "commonjs",
+      "moduleResolution": "node",
+      "noImplicitAny": false,
+      "outDir": "dist",
+      "sourceMap": true,
+      "target": "es5",
+      "typeRoots": ["node_modules/@types"],
+      "types": ["core-js", "node"],
+      "skipLibCheck": true
+    }
+}

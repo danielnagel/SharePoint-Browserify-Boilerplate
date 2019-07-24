@@ -1,0 +1,182 @@
+.table {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+}
+
+.table table {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.table tr:nth-child(even):not(.invisible) {
+    background-color: #f2f2f2;
+}
+
+.table tr:hover:not(.header):not(.invisible) {
+    background-color: #ddd;
+}
+
+.table .header {
+    padding: 12px;
+    text-align: center;
+    background-color: #001e64;
+    font-weight: bold;
+    color: white;
+}
+
+/* for rows */
+.table .invisible td {
+    background-color: white;
+    border: 0px;
+}
+
+/* for cells */
+.table .invisible {
+    background-color: white;
+    border: 0px;
+}
+
+.table .positive {
+    background: #ddffdd;
+    color: #008800;
+    text-align: center;
+}
+
+.table .negative {
+    background: #ffdddd;
+    color: #aa0000;
+    text-align: center;
+}
+
+#controlPanelContainer {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    padding-bottom: 8px;
+}
+
+#controlPanelContainer table {
+    border: 1px solid #ddd;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#controlPanelContainer td {
+    padding: 16px 32px;
+}
+
+.scriptHeader {
+    text-align: center;
+    color: #181818 !important;
+    padding-top: 100px;
+    padding-bottom: 10px;
+}
+
+.table input[type="text"] {
+    background: transparent;
+    border: none;
+}
+
+@media print {
+    @page {
+        size: landscape;
+    }
+
+    .table {
+        font-family: "times new roman", times, serif;
+        font-size: 14px;
+    }
+
+    .table td {
+        border: 1px solid #ddd;
+        padding: 4px 8px;
+    }
+
+    .table .header {
+        padding: 4px 8px;
+    }
+
+    .table tr:nth-child(even):not(.invisible) {
+        /* Chrome und Safari */
+        -webkit-print-color-adjust: exact;
+        /* Firefox und IE */
+        color-adjust: exact;
+    }
+
+    .table .header {
+        /* Chrome und Safari */
+        -webkit-print-color-adjust: exact;
+        /* Firefox und IE */
+        color-adjust: exact;
+    }
+
+    .table .positive {
+        /* Chrome und Safari */
+        -webkit-print-color-adjust: exact;
+        /* Firefox und IE */
+        color-adjust: exact;
+    }
+
+    .table .negative {
+        /* Chrome und Safari */
+        -webkit-print-color-adjust: exact;
+        /* Firefox und IE */
+        color-adjust: exact;
+    }
+
+    .scriptHeader {
+        padding-top: 10px;
+        page-break-before: always;
+    }
+
+    #table2 {
+        page-break-before: always;
+    }
+
+    #textContainer {
+        page-break-before: always;
+        font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+        font-size: 15px;
+        padding: auto;
+    }
+
+    #textContainer td p {
+        margin: 0px;
+    }
+
+    #linkContainer {
+        display: none;
+    }
+
+    /* SharePoint Elemente ausblenden */
+    /* Inhalts-Editor Text */
+    .ms-webpart-titleText {
+        display: none;
+    }
+
+    /* Suchfeld */
+    #SearchBox {
+        display: none;
+    }
+
+    /* Brotkrummen Linkliste */
+    #DeltaTopNavigation {
+        display: none;
+    }
+
+    /* SharePoint Leiste */
+    #suiteBar {
+        display: none;
+    }
+
+    /* Seiten Titel */
+    #pageTitle {
+        display: none;
+    }
+
+}
