@@ -1,0 +1,24 @@
+{
+  "name": "sharepoint-browserify-boilerplate",
+  "version": "1.0.0",
+  "description": "A boilerplate for deploying a web app to on premise SharePoint.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danisenpai/SharePoint-Browserify-Boilerplate.git"
+  },
+  "keywords": [
+    "sharepoint",
+    "typescript",
+    "gulp"
+  ],
+  "author": "Daniel Nagel danielsenpai95@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/danisenpai/SharePoint-Browserify-Boilerplate/issues"
+  },
+  "homepage": "https://github.com/danisenpai/SharePoint-Browserify-Boilerplate#readme"
+}
